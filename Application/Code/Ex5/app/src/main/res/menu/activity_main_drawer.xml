@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="@string/menu_home" />
+    <item android:title="@string/En_1" android:id="@+id/nav_title" >
+        <menu android:checkableBehavior="single">
+            <item
+                android:visible="false"
+                android:id="@+id/nav_temp"
+                android:icon="@drawable/temp"
+                android:title="@string/temp" />
+            <item
+                android:visible="false"
+                android:id="@+id/nav_humidity"
+                android:icon="@drawable/hum"
+                android:title="@string/menu_gallery" />
+            <item
+                android:visible="false"
+                android:id="@+id/nav_heat"
+                android:icon="@drawable/heat"
+                android:title="@string/menu_slideshow" />
+            <item
+                android:visible="false"
+                android:id="@+id/nav_air"
+                android:icon="@drawable/co2"
+                android:title="@string/air" />
+        </menu>
+    </item>
+</menu>

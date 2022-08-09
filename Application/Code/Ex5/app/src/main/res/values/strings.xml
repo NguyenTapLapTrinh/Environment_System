@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Environment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Humidity</string>
+    <string name="menu_slideshow">Heat_index</string>
+    <string name="En_1">Environment</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="temp">Temperature</string>
+    <string name="air">Air Quality</string>
+    <string name="link">Hyperlink TextView</string>
+    <string name="hyperlink">View on website\n<a href="https://nh-shopee-website.herokuapp.com/">Click here</a></string>
+</resources>

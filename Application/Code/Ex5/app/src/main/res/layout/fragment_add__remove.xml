@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.add_remove.Add_RemoveFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Create new ID"
+        android:gravity="center"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/lineKV"
+        android:layout_marginLeft="30dp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="Enter KhuVuc"/>
+
+        />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/add"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="CREATE"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Remove ID"
+        android:gravity="center"
+        android:textSize="30sp"/>
+    <EditText
+        android:id="@+id/removeID"
+        android:layout_marginLeft="30dp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="Enter ID"/>
+    />
+    <Button
+        android:id="@+id/remove"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="REMOVE"/>
+
+
+</LinearLayout>

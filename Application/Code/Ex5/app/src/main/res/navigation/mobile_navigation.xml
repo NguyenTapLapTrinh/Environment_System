@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home"
+    >
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.ex5.ui.nav_slide.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_add_remove"
+            app:destination="@id/nav_add_remove" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_humidity"
+        android:name="com.example.ex5.ui.nav_slide.HumidityFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_humidity" />
+
+    <fragment
+        android:id="@+id/nav_heat"
+        android:name="com.example.ex5.ui.nav_slide.Heat_IndexFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_heat_index" />
+    <fragment
+        android:id="@+id/nav_temp"
+        android:name="com.example.ex5.ui.nav_slide.TempFragment"
+        android:label="@string/temp"
+        tools:layout="@layout/fragment_temp" />
+    <fragment
+        android:id="@+id/nav_add_remove"
+        android:name="com.example.ex5.ui.add_remove.Add_RemoveFragment"
+        android:label="Add or Remove"
+        tools:layout="@layout/fragment_add__remove" />
+    <fragment
+        android:id="@+id/nav_air"
+        android:name="com.example.ex5.ui.nav_slide.Air_QualityFragment"
+        android:label="@string/air"
+        tools:layout="@layout/fragment_air__quality" />
+</navigation>

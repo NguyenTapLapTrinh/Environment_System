@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.nav_slide.Heat_IndexFragment">
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/heat_img"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heat Index"
+            android:textSize="35sp"/>
+        <TextView
+            android:id="@+id/Heat_Key"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="45"
+            android:textColor="@color/light_black"
+            android:textSize="60sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/heat_warn"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/heat_warn_1_2"/>
+</LinearLayout>

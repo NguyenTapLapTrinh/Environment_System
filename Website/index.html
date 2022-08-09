@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environment Qualities</title>
+    <link rel="stylesheet" href="./assects/css/style.css">
+    <link rel="stylesheet" href="./assects/icon/fontawesome-free-6.0.0-web/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="./assects/img/eco.png">
+</head>
+
+<body>
+    <div class="app">
+        <div class="app__container">
+            <div class="app__heading">
+                <div class="app__heading-info">
+                    <h2 class="app__heading-header">Environment Qualities</h2>
+                    <div class="app__heading-label"> <span id="app__setday"></span>, User</div>
+                    <div class="app__heading-text">Have a nice day</div>
+                </div>
+                <div class="app__time">
+                    <div class="app__profile">
+                        <img src="./assects/img/Google.jpg" alt="" class="app__profile-img">
+                    </div>
+                    <div class="app__heading-time-label" id="clock" onload="currentTime()"></div>
+                    <div class="app__heading-date-label" id="date" onload="currentTime()"></div>
+                </div>
+            </div>
+            <div class="app__body">
+                <!-- SELECTION -->
+                <div class="app__body-select">
+                    <div class="app__body-select-heading">MENU</div>
+                    <ul class="app__body-select-list">
+                    </ul>
+                </div>
+                <!-- BODY CONTAINER -->
+                <div class="app__body-container">
+                </div>
+            </div>
+            <div class="add_area-click">
+                <i class="fa-solid fa-plus add_area-click-btn "></i> Add New Area
+            </div>
+        </div>
+        <div class="add_device">
+            <div class="modal__overlay"></div>
+            <div class="modal__body" style="width: 300px;">
+                <div class="modal__heading">
+                    <div class="modal__heading-text">New Area</div>
+                    <i class="fa-solid fa-xmark modal__close"></i>
+                </div>
+                <div class="modal__text-please">Please Enter Your Area</div>
+                <input type="text" class="modal_body-input" placeholder="Enter Area">
+                <div class="modal__button">
+                    <button class="modal__button-accept">OK</button>
+                    <button class="modal__button-cancel">CANCEL</button>
+                </div>
+            </div>
+        </div>
+        <div class="remove_ques">
+            <div class="modal__overlay"></div>
+            <div class="modal__body" style="height: 110px;">
+                <div class="modal__heading">
+                    <div class="modal__heading-text">Remove Area</div>
+                    <i class="fa-solid fa-xmark modal__close"></i>
+                </div>
+                <div class="modal__text-please">Do you want to remove this area?</div>
+                <div class="modal__button">
+                    <button class="modal__button-accept--remove">OK</button>
+                    <button class="modal__button-cancel--remove">CANCEL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
